@@ -40,5 +40,12 @@ const mixedSorting = (array) => {
 const reverseSorting = (array) => {
     return array.sort((a,b) => a - b).reverse()
 }
-const result = reverseSorting(mixed)
+// const result = reverseSorting(mixed)
+// app.innerHTML = JSON.stringify(result)
+
+// REVERSE SORTING FOR STRINGS
+const reverseStr = (array) => {
+    return array.sort().reverse()
+}
+const result = reverseStr(mixed)
 app.innerHTML = JSON.stringify(result)
