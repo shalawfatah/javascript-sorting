@@ -73,3 +73,10 @@ const conditionalSorting = (array) => {
 }
 const result = conditionalSorting(mixed)
 app.innerHTML = JSON.stringify(result)
+
+
+// DESCENDING SORTING FOR NUMBERS
+const descNum = (array) => {
+    return array.sort((a, b) => a -b ).reverse()
+}
+
