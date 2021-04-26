@@ -19,5 +19,19 @@ const stringSorting = (array) => {
 const numberSorting = (array) => {
     return array.sort((a, b) => a - b)
 }
-const result = numberSorting(mixed)
+// const result = numberSorting(mixed)
+// app.innerHTML = JSON.stringify(result)
+
+// SORTING NUMBERS AND STRINGS
+const mixedSorting = (array) => {
+    const numArray = []
+    const strArray = []
+    array.forEach(element => {
+        isNaN(element) ? strArray.push(element) : numArray.push(element)
+    })
+    numArray.sort((a, b) => a - b)
+    strArray.sort()
+    return [...strArray, ...numArray]
+}
+const result = mixedSorting(mixed)
 app.innerHTML = JSON.stringify(result)
