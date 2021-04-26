@@ -33,5 +33,12 @@ const mixedSorting = (array) => {
     strArray.sort()
     return [...strArray, ...numArray]
 }
-const result = mixedSorting(mixed)
+// const result = mixedSorting(mixed)
+// app.innerHTML = JSON.stringify(result)
+
+// REVERSE NUMBER SORTING
+const reverseSorting = (array) => {
+    return array.sort((a,b) => a - b).reverse()
+}
+const result = reverseSorting(mixed)
 app.innerHTML = JSON.stringify(result)
