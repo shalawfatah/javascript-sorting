@@ -47,5 +47,21 @@ const reverseSorting = (array) => {
 const reverseStr = (array) => {
     return array.sort().reverse()
 }
-const result = reverseStr(mixed)
+// const result = reverseStr(mixed)
+// app.innerHTML = JSON.stringify(result)
+
+// SORTING ARRAY OF OBJECTS BY NUMBER VALUE
+const items = [
+    { name: 'Edward', value: 21 },
+    { name: 'Sharpe', value: 37 },
+    { name: 'And', value: 45 },
+    { name: 'The', value: -12 },
+    { name: 'Magnetic', value: 13 },
+    { name: 'Zeros', value: 37 }
+  ]
+
+const sortingArrObj = (array) => {
+    return array.sort((a, b) => a.value - b.value)
+}
+const result = sortingArrObj(items)
 app.innerHTML = JSON.stringify(result)
