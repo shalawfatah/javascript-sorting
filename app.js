@@ -63,5 +63,13 @@ const items = [
 const sortingArrObj = (array) => {
     return array.sort((a, b) => a.value - b.value)
 }
-const result = sortingArrObj(items)
+// const result = sortingArrObj(items)
+// app.innerHTML = JSON.stringify(result)
+
+// CONDITIONAL SORTING 
+const conditionalSorting = (array) => {
+    if(!array.length) return
+    return array.sort()
+}
+const result = conditionalSorting(mixed)
 app.innerHTML = JSON.stringify(result)
