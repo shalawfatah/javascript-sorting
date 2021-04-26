@@ -80,3 +80,7 @@ const descNum = (array) => {
     return array.sort((a, b) => a -b ).reverse()
 }
 
+// DESCENDING SORTING FOR NUMBERS - SECOND WAY
+const descNumTwo = (array) => {
+    return array.sort((a, b) => b - a) 
+}
